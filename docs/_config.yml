@@ -1,0 +1,49 @@
+title: Warmane Bot Documentation
+description: Complete documentation for the Warmane Discord Bot
+baseurl: ""
+url: "https://svenbledt.github.io/Warmane-Bot"
+
+# Build settings
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  commands:
+    output: true
+    permalink: /commands/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "commands"
+    values:
+      layout: "command"
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: Commands
+    url: /commands/
+  - title: Setup
+    url: /setup/
+  - title: API Reference
+    url: /api/
+
+# Social links
+social:
+  github: svenbledt/Warmane-Bot
+
+# Footer
+footer:
+  links:
+    - title: GitHub
+      url: https://github.com/svenbledt/Warmane-Bot
+    - title: Issues
+      url: https://github.com/svenbledt/Warmane-Bot/issues
+    - title: License
+      url: https://github.com/svenbledt/Warmane-Bot/blob/main/LICENSE.txt 

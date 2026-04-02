@@ -1,0 +1,38 @@
+{
+  "name": "warmane-bot",
+  "version": "2.2.4",
+  "description": "A Discord bot commands, components and events handler based on discord.js v14 and fully written in JavaScript.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "docs:generate": "node scripts/generate-docs.js",
+    "docs:serve": "docsify serve docs",
+    "docs:dev": "docsify serve docs --port 3000"
+  },
+  "keywords": [],
+  "author": "svenbledt",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "axios-rate-limit": "^1.4.0",
+    "canvas": "^3.2.0",
+    "cheerio": "^1.1.2",
+    "colors": "^1.4.0",
+    "discord.js": "^14.22.0",
+    "dotenv": "^17.2.1",
+    "mongoose": "^8.17.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "canvas"
+    ]
+  }
+}
